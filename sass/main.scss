@@ -1,0 +1,117 @@
+/* Modificar variables */
+$position-values: (20 :20%);
+
+$primary:#5265E1;
+$secondary:#FA5959;
+$success:#283673;
+$font-family-sans-serif: 'Roboto',sans-serif;
+$font-weight-semibold: 500;
+$font-size-base:.8rem;
+
+$border-widths: (1: 0.1px);
+
+
+/* Estils propis */
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.background-hero{
+    z-index: -1;
+}
+
+@media (min-width : 992px) {
+    .image-hero{
+        width: 110%;
+    }
+}
+
+@media (max-width : 992px) {
+    .background-hero{
+        width: 200vw !important;
+    }
+    .image-hero{
+        width: 100%;
+    }
+}
+
+
+/*  Carreguem llibreria Bootstrap*/
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Modificar estils Bootstrap */
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../images/icon-hamburger.svg);
+}
+
+.btn-close {
+    background-image: url(../images/icon-close.svg);
+    opacity: 1;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.offcanvas-header img {
+    max-width: 200px;
+}
+
+@media (min-width : 992px) {
+    .offcanvas {
+        visibility: visible;
+        position: relative;
+    }
+    .container.mt-5 {
+        margin-top: 200px !important;
+    }
+    .navbar-nav{
+        .nav-item{
+            a{
+                font-size: $font-size-lg !important;
+            }
+            .btn{
+                font-size: $font-size-lg !important;
+                background-color: $secondary;
+                width: 100% !important;
+            }
+            &.border-top{
+                border: none !important;
+            }
+            &.w-100{
+                width: auto !important;
+            }
+        }
+    }
+}
+
+@media (max-width : 992px) {
+    .offcanvas {
+        width: 100% !important;
+    }
+    .container.mt-5 {
+        margin-top: 100px !important;
+    }
+    .offcanvas-start-lg {
+        top: 0;
+        left: 0;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        transform: translateX(-100%);
+    }
+    .navbar-nav{
+        .nav-item {
+            a {
+                color: white !important;
+            }
+        }
+    } 
+}
+
+
