@@ -1,9 +1,10 @@
-/* Modificar variables */
+/* ------------- MODIFICAR VARIABLES ------------- */
 $position-values: (20 :20%);
 
 $primary:#5265E1;
 $secondary:#FA5959;
 $success:#283673;
+$info:#adb5bd;
 $font-family-sans-serif: 'Roboto',sans-serif;
 $font-weight-semibold: 500;
 $font-size-base:.8rem;
@@ -11,12 +12,12 @@ $font-size-base:.8rem;
 $border-widths: (1: 0.1px);
 
 
-/* Estils propis */
+/* ------------- ESTILS PROPIS ------------- */
 
 .font-montserrat {
     font-family: 'Montserrat', sans-serif !important;
 }
-
+/* Section primary */
 .background-hero{
     z-index: -1;
 }
@@ -37,16 +38,21 @@ $border-widths: (1: 0.1px);
 }
 
 
-/*  Carreguem llibreria Bootstrap*/
+/* ------------- CARREGUEM LLIBRERIA BOOTSTRAP ------------- */
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-/* Modificar estils Bootstrap */
+
+
+
+
+/* ------------- MODIFICACIONS ESTILS BOOTSTRAP ------------- */
 
 body {
     overflow-x: hidden;
 }
 
+/* Header */
 .navbar-toggler-icon {
     background-image: url(../images/icon-hamburger.svg);
 }
@@ -64,13 +70,27 @@ body {
     max-width: 200px;
 }
 
+/* Section Features */
+.features{
+    .nav-item{
+        .link-info{
+            &.active{
+                color:black !important;
+                border-bottom: 3px solid $secondary !important;
+            }
+        }
+    }
+}
+
 @media (min-width : 992px) {
+    .container.mt-5 {
+        margin-top: 200px !important;
+    }
+    
+    /* Header */
     .offcanvas {
         visibility: visible;
         position: relative;
-    }
-    .container.mt-5 {
-        margin-top: 200px !important;
     }
     .navbar-nav{
         .nav-item{
@@ -90,14 +110,22 @@ body {
             }
         }
     }
+    /* Section Features */
+    .features{
+        .nav-item{
+            border-top: none !important;
+        }
+    }
 }
 
 @media (max-width : 992px) {
-    .offcanvas {
-        width: 100% !important;
-    }
     .container.mt-5 {
         margin-top: 100px !important;
+    }
+    
+    /* Header */
+    .offcanvas {
+        width: 100% !important;
     }
     .offcanvas-start-lg {
         top: 0;
@@ -112,6 +140,8 @@ body {
             }
         }
     } 
+    /* Section Features */
+    
 }
 
 
