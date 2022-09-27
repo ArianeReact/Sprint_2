@@ -18,13 +18,13 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white bg-opacity-75 pt-4 pb-3">
             <div class="container-fluid container-lg">
-                <a class="navbar-brand ps-2 ps-lg-0" href="#""><img src="./images/logo-bookmark.svg" /></a>
+                <a class="navbar-brand ps-2 ps-lg-0" href="#""><img src=" ./images/logo-bookmark.svg" /></a>
                 <button class="btn navbar-toggler border-0 px-2" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <span class="navbar-toggler-icon border-0"></span>
                 </button>
-                <div class="offcanvas offcanvas-start-lg bg-success bg-opacity-75 px-4 py-4" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas offcanvas-start-lg bg-success bg-opacity-75 px-4 py-4" tabindex="-1"
+                    id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header d-flex d-lg-none px-0">
                         <img src="./images/logo-bookmark-white.svg" />
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -60,136 +60,252 @@
     </header>
     <main class="container mt-5">
         <section class="primary row my-0 my-lg-5 py-5 px-3 align-items-center">
-                <div class="col-12 col-lg-6 order-2 order-lg-1 px-0 pe-lg-5 pt-5 pt-lg-0 text-center text-lg-start">
-                    <h1 class="display-4 fw-semibold mb-4">A Simple Bookmark Manager</h1>
-                    <p class="fs-4">A clean and simple interface to organize your favourite websites. Open a
-                        new browser tab and see
-                        your sites load instantly. Try it for free.</p>
-                    <div class="buttons mt-4">
-                        <button class="btn btn-primary shadow-sm px-4 fw-semibold">Get it on Chrome</button>
-                        <button class="btn btn-light shadow-sm m-2 px-4 fw-semibold">Get it in Firefox</button>
-                    </div>
+            <div class="col-12 col-lg-6 order-2 order-lg-1 px-0 pe-lg-5 pt-5 pt-lg-0 text-center text-lg-start">
+                <h1 class="display-4 fw-semibold mb-4">A Simple Bookmark Manager</h1>
+                <p class="fs-4 text-info">A clean and simple interface to organize your favourite websites. Open a
+                    new browser tab and see
+                    your sites load instantly. Try it for free.</p>
+                <div class="buttons mt-4">
+                    <button class="btn btn-primary shadow-sm px-4 py-3 fw-semibold fs-5">Get it on Chrome</button>
+                    <button class="btn btn-primary shadow-sm px-4 py-3 fw-semibold fs-5">Get it in Firefox</button>
                 </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2 position-relative">
-                    <img src="./images/illustration-hero.svg" class="image-hero" alt="Illustration Hero"/>
-                    <div class="background-hero position-absolute top-20 start-20 rounded-pill bg-primary h-75 min-vw-100"></div>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 position-relative">
+                <img src="./images/illustration-hero.svg" class="image-hero" alt="Illustration Hero" />
+                <div class="background-hero position-absolute top-20 start-20 rounded-pill bg-primary h-75 min-vw-100">
                 </div>
+            </div>
         </section>
         <section class="features row my-0 my-lg-5 py-5 px-3">
-            <div class="col-12">
-                <h1 class="display-6 fw-semibold mb-4 text-center">Features</h1>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <h1 class="display-6 fw-semibold mb-4 text-center">Features</h1>
+                </div>
             </div>
-            <div class="col-12 d-flex justify-content-center"> 
-                <p class="fs-4 w-75 text-center">Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <p class="fs-4 text-center text-info">Our aim is to make it quick and easy for you to access your favorite
+                        websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                </div>
             </div>
             <div class="col-12 mt-4">
-                  <ul class="nav nav-tabs row justify-content-center border-bottom border-1" id="myTab" role="tablist">
+                <ul class="nav nav-tabs row justify-content-center border-bottom border-1" id="myTab" role="tablist">
                     <li class="nav-item col-12 col-lg-4 text-center border-top border-1 py-0 my-0" role="presentation">
-                      <button class="nav-link border-0 fs-5 d-inline link-info my-0 py-3 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Simple Bookmarking</button>
+                        <button class="nav-link border-0 fs-5 d-inline link-info my-0 py-3 active" id="home-tab"
+                            data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                            aria-controls="home-tab-pane" aria-selected="true">Simple Bookmarking</button>
                     </li>
                     <li class="nav-item col-12 col-lg-4 text-center border-top border-1 py-0 my-0" role="presentation">
-                      <button class="nav-link border-0 fs-5 d-inline link-info my-0 py-3" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Speedy Searching</button>
+                        <button class="nav-link border-0 fs-5 d-inline link-info my-0 py-3" id="profile-tab"
+                            data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                            aria-controls="profile-tab-pane" aria-selected="false">Speedy Searching</button>
                     </li>
-                    <li class="nav-item col-12 col-lg-4 text-center border-top border-1 border-lg-0 py-0 my-0" role="presentation">
-                      <button class="nav-link border-0 fs-5 d-inline link-info my-0 py-3" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Easy Sharing</button>
+                    <li class="nav-item col-12 col-lg-4 text-center border-top border-1 border-lg-0 py-0 my-0"
+                        role="presentation">
+                        <button class="nav-link border-0 fs-5 d-inline link-info my-0 py-3" id="contact-tab"
+                            data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
+                            aria-controls="contact-tab-pane" aria-selected="false">Easy Sharing</button>
                     </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
                         <div class="row pt-5 px-3 align-items-center">
                             <div class="col-12 col-lg-6 mb-5 mb-lg-0 px-0 pe-lg-5 position-relative">
-                                <img src="./images/illustration-features-tab-1.svg" class="w-100" alt="Illustration Features Bookmark in one click"/>
-                                <div class="background-hero position-absolute top-20 end-20 rounded-pill bg-primary h-100 min-vw-100"></div>
+                                <img src="./images/illustration-features-tab-1.svg" class="w-100"
+                                    alt="Illustration Features Bookmark in one click" />
+                                <div
+                                    class="background-hero position-absolute top-20 end-20 rounded-pill bg-primary h-100 min-vw-100">
+                                </div>
                             </div>
-                            <div class="col-12 col-lg-6 mt-2 mt-md-5 mt-lg-0 px-0 ps-lg-5 pt-5 pt-lg-0 text-center text-lg-start">
+                            <div
+                                class="col-12 col-lg-6 mt-2 mt-md-5 mt-lg-0 px-0 ps-lg-5 pt-5 pt-lg-0 text-center text-lg-start">
                                 <h1 class="display-6 fw-semibold mb-4">Bookmark in one click</h1>
-                                <p class="fs-4">Organize your bookmarks howwever you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+                                <p class="fs-4 text-info">Organize your bookmarks howwever you like. Our simple drag-and-drop
+                                    interface gives you complete control over how you manage your favorite sites.</p>
                                 <div class="buttons mt-4">
-                                    <button class="btn btn-primary shadow-sm px-4 fw-semibold">More Info</button>
+                                    <button class="btn btn-primary shadow-sm px-4 py-3 fw-semibold fs-5">More Info</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
                         <div class="row pt-5 px-3 align-items-center">
                             <div class="col-12 col-lg-6 mb-5 mb-lg-0 px-0 pe-lg-5 position-relative">
-                                <img src="./images/illustration-features-tab-2.svg" class="w-100" alt="Illustration Features Intelligent Searching"/>
-                                <div class="background-hero position-absolute top-20 end-20 rounded-pill bg-primary h-100 min-vw-100"></div>
+                                <img src="./images/illustration-features-tab-2.svg" class="w-100"
+                                    alt="Illustration Features Intelligent Searching" />
+                                <div
+                                    class="background-hero position-absolute top-20 end-20 rounded-pill bg-primary h-100 min-vw-100">
+                                </div>
                             </div>
-                            <div class="col-12 col-lg-6 mt-2 mt-md-5 mt-lg-0 px-0 ps-lg-5 pt-5 pt-lg-0 text-center text-lg-start">
+                            <div
+                                class="col-12 col-lg-6 mt-2 mt-md-5 mt-lg-0 px-0 ps-lg-5 pt-5 pt-lg-0 text-center text-lg-start">
                                 <h1 class="display-6 fw-semibold mb-4">Intelligent Searching</h1>
-                                <p class="fs-4">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                                <p class="fs-4 text-info">Our powerful search feature will help you find saved sites in no time at
+                                    all. No need to trawl through all of your bookmarks.</p>
                                 <div class="buttons mt-4">
-                                    <button class="btn btn-primary shadow-sm px-4 fw-semibold">More Info</button>
+                                    <button class="btn btn-primary shadow-sm px-4 py-3 fw-semibold fs-5">More Info</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
                         <div class="row pt-5 px-3 align-items-center">
                             <div class="col-12 col-lg-6 mb-5 mb-lg-0 px-0 pe-lg-5 position-relative">
-                                <img src="./images/illustration-features-tab-3.svg" class="w-100" alt="Illustration Features Share your bookmarks"/>
-                                <div class="background-hero position-absolute top-20 end-20 rounded-pill bg-primary h-100 min-vw-100"></div>
+                                <img src="./images/illustration-features-tab-3.svg" class="w-100"
+                                    alt="Illustration Features Share your bookmarks" />
+                                <div
+                                    class="background-hero position-absolute top-20 end-20 rounded-pill bg-primary h-100 min-vw-100">
+                                </div>
                             </div>
-                            <div class="col-12 col-lg-6 mt-2 mt-md-5 mt-lg-0 px-0 ps-lg-5 pt-5 pt-lg-0 text-center text-lg-start">
+                            <div
+                                class="col-12 col-lg-6 mt-2 mt-md-5 mt-lg-0 px-0 ps-lg-5 pt-5 pt-lg-0 text-center text-lg-start">
                                 <h1 class="display-6 fw-semibold mb-4">Share your bookmarks</h1>
-                                <p class="fs-4">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                                <p class="fs-4 text-info">Easily share your bookmarks and collections with others. Create a
+                                    shareable link that you can send at the click of a button.</p>
                                 <div class="buttons mt-4">
-                                    <button class="btn btn-primary shadow-sm px-4 fw-semibold">More Info</button>
+                                    <button class="btn btn-primary shadow-sm px-4 py-3 fw-semibold w-100 fs-5">More Info</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </section>
         <section class="cards row my-0 my-lg-5 py-5 px-3">
-            <div class="col-12">
-                <h1 class="display-6 fw-semibold mb-4 text-center">Download the extension</h1>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <h1 class="display-6 fw-semibold mb-4 text-center">Download the extension</h1>
+                </div>
             </div>
-            <div class="col-12 d-flex justify-content-center"> 
-                <p class="fs-4 w-75 text-center">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <p class="fs-4 text-center text-info">We've got more browsers in the pipeline. Please do let us know if
+                        you've got a favourite you'd like us to prioritize.</p>
+                </div>
             </div>
             <div class="col-12 mt-4">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col col-card py-4 py-lg-0 px-lg-4 h-100">
-                      <div class="card h-100 shadow align-items-center py-3 px-3 border-0">
-                        <img src="./images/logo-chrome.svg" class="card-img-top w-50 py-4" alt="Logo Chrome">
-                        <div class="card-body pb-5">
-                          <h5 class="card-title h4">Add to Chrome</h5>
-                          <p class="card-text link-info">Minimum version 62</p>
+                        <div class="card h-100 shadow align-items-center py-3 px-3 border-0">
+                            <img src="./images/logo-chrome.svg" class="card-img-top w-50 py-4" alt="Logo Chrome">
+                            <div class="card-body pb-5">
+                                <h5 class="card-title h4">Add to Chrome</h5>
+                                <p class="card-text text-info">Minimum version 62</p>
+                            </div>
+                            <div class="card-footer bg-body border-0 w-100 text-center pt-4">
+                                <button type="button" class="btn btn-primary shadow-sm px-4 py-3 fw-semibold w-100 fs-5">Add
+                                    & Install Extension</button>
+                            </div>
                         </div>
-                        <div class="card-footer bg-body border-0 w-100 text-center pt-4">
-                            <button type="button" class="btn btn-primary shadow-sm px-4 py-3 fw-semibold w-100">Add & Install Extension</button>
-                        </div>
-                      </div>
                     </div>
                     <div class="col col-card py-4 py-lg-0 px-lg-4 h-100">
-                      <div class="card h-100 shadow align-items-center py-3 px-3 border-0">
-                        <img src="./images/logo-firefox.svg" class="card-img-top w-50 py-4" alt="Logo Firefox">
-                        <div class="card-body pb-5">
-                          <h5 class="card-title h4">Add to firefox</h5>
-                          <p class="card-text link-info">Minimum version 55</p>
+                        <div class="card h-100 shadow align-items-center py-3 px-3 border-0">
+                            <img src="./images/logo-firefox.svg" class="card-img-top w-50 py-4" alt="Logo Firefox">
+                            <div class="card-body pb-5">
+                                <h5 class="card-title h4">Add to firefox</h5>
+                                <p class="card-text text-info">Minimum version 55</p>
+                            </div>
+                            <div class="card-footer bg-body border-0 w-100 text-center pt-4">
+                                <button type="button" class="btn btn-primary shadow-sm px-4 py-3 fw-semibold w-100 fs-5">Add
+                                    & Install Extension</button>
+                            </div>
                         </div>
-                        <div class="card-footer bg-body border-0 w-100 text-center pt-4">
-                            <button type="button" class="btn btn-primary shadow-sm px-4 py-3 fw-semibold w-100">Add & Install Extension</button>
-                        </div>
-                      </div>
                     </div>
                     <div class="col col-card py-4 py-lg-0 px-lg-4 h-100">
-                      <div class="card h-100 shadow align-items-center py-3 px-3 border-0">
-                        <img src="./images/logo-opera.svg" class="card-img-top w-50 py-4" alt="Logo Opera">
-                        <div class="card-body pb-5">
-                          <h5 class="card-title h4">Add to Opera</h5>
-                          <p class="card-text link-info">Minimum version 46</p>
+                        <div class="card h-100 shadow align-items-center py-3 px-3 border-0">
+                            <img src="./images/logo-opera.svg" class="card-img-top w-50 py-4" alt="Logo Opera">
+                            <div class="card-body pb-5">
+                                <h5 class="card-title h4">Add to Opera</h5>
+                                <p class="card-text text-info">Minimum version 46</p>
+                            </div>
+                            <div class="card-footer bg-body border-0 w-100 text-center pt-4">
+                                <button type="button" class="btn btn-primary shadow-sm px-4 py-3 fw-semibold w-100 fs-5">Add
+                                    & Install Extension</button>
+                            </div>
                         </div>
-                        <div class="card-footer bg-body border-0 w-100 text-center pt-4">
-                            <button type="button" class="btn btn-primary shadow-sm px-4 py-3 fw-semibold w-100">Add & Install Extension</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
+        </section>
+        <section class="acordeon row my-0 my-lg-5 py-5 px-3 justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <h1 class="display-6 fw-semibold mb-4 text-center">Frequently Asked Questions</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <p class="fs-4 text-center text-info">Here are some of our FAQ'a. If you have any other questions you'd like
+                        answered please feel free to email us.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 mt-4">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed fs-4 bg-none" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    What is Bookmark?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-info fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic sed eum ea atque unde! Dignissimos quae similique aperiam? Nobis autem corporis odit illo exercitationem voluptas sit accusantium unde voluptatum!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    How can I request a new browser?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-info fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, quasi assumenda! Ratione repellat modi aspernatur ducimus non provident? Eligendi totam culpa quibusdam ipsa qui dignissimos mollitia in, quia quasi dolorem.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Is there a mobile app?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-info fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus culpa assumenda debitis expedita non facilis omnis ratione, modi, vitae dicta reprehenderit et quae repudiandae corrupti est animi iusto necessitatibus tempora?</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    What about other Chromium browsers?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-info fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse, quod suscipit perferendis illum nostrum harum, cumque blanditiis quos vero obcaecati vel sit optio exercitationem provident animi. Temporibus, incidunt qui.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mt-5">
+                    <button class="btn btn-primary shadow-sm px-4 py-3 fw-semibold fs-5">More Info</button>
+                </div>
+            </div>
+            
         </section>
     </main>
 

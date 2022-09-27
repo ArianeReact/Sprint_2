@@ -11,6 +11,11 @@ $font-size-base:.8rem;
 
 $border-widths: (1: 0.1px);
 
+$accordion-button-active-bg: none;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow:none;
+$accordion-button-active-color: black;
+
 
 /* ------------- ESTILS PROPIS ------------- */
 
@@ -105,6 +110,19 @@ body {
     }
 }
 
+/* Section Accorddion */
+
+.accordion-button::after{
+    background-image: url(../images/icon-arrow.svg);
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../images/icon-arrow-red.svg);
+}
+.accordion-button:hover{
+    color:$secondary;
+}
+
+/* Breakpoint lg */
 @media (min-width : 992px) {
     .container.mt-5 {
         margin-top: 200px !important;
@@ -144,6 +162,7 @@ body {
     
 }
 
+/* Breakpoint mobil */
 @media (max-width : 992px) {
     .container.mt-5 {
         margin-top: 100px !important;
