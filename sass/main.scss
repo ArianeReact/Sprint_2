@@ -1,5 +1,5 @@
 /* ------------- MODIFICAR VARIABLES ------------- */
-$position-values: (20 :20%);
+$position-values: (20 :20%, 80 :80%);
 
 $primary:#5265E1;
 $secondary:#FA5959;
@@ -15,6 +15,8 @@ $accordion-button-active-bg: none;
 $accordion-button-focus-border-color: none;
 $accordion-button-focus-box-shadow:none;
 $accordion-button-active-color: black;
+
+
 
 
 /* ------------- ESTILS PROPIS ------------- */
@@ -122,8 +124,23 @@ body {
     color:$secondary;
 }
 
+/* Footer */
+.was-validated .form-control:invalid{
+    border:2px solid $secondary;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-image:url(../images/icon-error.svg);
+}
+.form-control{
+    &::placeholder {
+       color:$info;
+    }
+}
+
+
 /* Breakpoint lg */
 @media (min-width : 992px) {
+    
     .container.mt-5 {
         margin-top: 200px !important;
     }
@@ -157,13 +174,11 @@ body {
             border-top: none !important;
         }
     }
-
-    /* Section Cards */
-    
 }
 
 /* Breakpoint mobil */
 @media (max-width : 992px) {
+
     .container.mt-5 {
         margin-top: 100px !important;
     }
@@ -184,7 +199,7 @@ body {
             }
         }
     } 
-    /* Section Features */
+
     
 }
 

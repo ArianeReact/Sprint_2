@@ -5734,14 +5734,26 @@ textarea.form-control-lg {
 .top-20 {
   top: 20% !important; }
 
+.top-80 {
+  top: 80% !important; }
+
 .bottom-20 {
   bottom: 20% !important; }
+
+.bottom-80 {
+  bottom: 80% !important; }
 
 .start-20 {
   left: 20% !important; }
 
+.start-80 {
+  left: 80% !important; }
+
 .end-20 {
   right: 20% !important; }
+
+.end-80 {
+  right: 80% !important; }
 
 .translate-middle {
   transform: translate(-50%, -50%) !important; }
@@ -8396,6 +8408,16 @@ body {
 .accordion-button:hover {
   color: #FA5959; }
 
+/* Footer */
+.was-validated .form-control:invalid {
+  border: 2px solid #FA5959;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-image: url(../images/icon-error.svg); }
+
+.form-control::placeholder {
+  color: #adb5bd; }
+
 /* Breakpoint lg */
 @media (min-width: 992px) {
   .container.mt-5 {
@@ -8416,8 +8438,7 @@ body {
     width: auto !important; }
   /* Section Features */
   .features .nav-item {
-    border-top: none !important; }
-  /* Section Cards */ }
+    border-top: none !important; } }
 
 /* Breakpoint mobil */
 @media (max-width: 992px) {
@@ -8431,5 +8452,4 @@ body {
     left: 0;
     transform: translateX(-100%); }
   .navbar-nav .nav-item a {
-    color: white !important; }
-  /* Section Features */ }
+    color: white !important; } }
