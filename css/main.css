@@ -4,28 +4,29 @@
   font-family: 'Montserrat', sans-serif !important; }
 
 /* Section primary */
-.background-hero {
-  z-index: -1; }
+.section-primary .background-hero, .section-features .background-hero {
+  z-index: -1;
+  width: 200vw !important; }
 
+/*Breakpoint lg */
 @media (min-width: 992px) {
   /* Section primary */
-  .image-hero {
+  .section-primary .image-hero {
     width: 110%; }
   /* Section Cards */
-  .col-card:nth-child(1) {
+  .section-cards .col-card:nth-child(1) {
     margin-top: 40px; }
-  .col-card:nth-child(2) {
+  .section-cards .col-card:nth-child(2) {
     margin-top: 80px; }
-  .col-card:nth-child(3) {
+  .section-cards .col-card:nth-child(3) {
     margin-top: 120px; }
-  .col-card:nth-child(4) {
+  .section-cards .col-card:nth-child(4) {
     margin-top: 160px; } }
 
+/*Breakpoint movil */
 @media (max-width: 992px) {
   /* Section primary */
-  .background-hero {
-    width: 200vw !important; }
-  .image-hero {
+  .section-primary .image-hero {
     width: 100%; } }
 
 /* ------------- CARREGUEM LLIBRERIA BOOTSTRAP ------------- */
@@ -5881,6 +5882,9 @@ textarea.form-control-lg {
 .h-75 {
   height: 75% !important; }
 
+.h-90 {
+  height: 90% !important; }
+
 .h-100 {
   height: 100% !important; }
 
@@ -8374,70 +8378,105 @@ textarea.form-control-lg {
 body {
   overflow-x: hidden; }
 
+.btn {
+  border: 2px solid transparent; }
+  .btn:hover {
+    background-color: transparent; }
+  .btn.btn-primary:hover {
+    color: #5265E1;
+    border-color: #5265E1; }
+  .btn.btn-light:hover {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5); }
+
 /* Header */
-.navbar-toggler-icon {
+header .navbar-toggler-icon {
   background-image: url(../images/icon-hamburger.svg); }
 
-.btn-close {
+header .btn-close {
   background-image: url(../images/icon-close.svg);
   opacity: 1; }
 
-.navbar-toggler:focus {
+header .navbar-toggler:focus {
   box-shadow: none; }
 
-.offcanvas-header img {
+header .offcanvas-header img {
   max-width: 200px; }
 
+header .nav-link:hover {
+  color: #FA5959 !important; }
+
+header .navbar-nav .nav-item .btn {
+  border: 2px solid; }
+  header .navbar-nav .nav-item .btn:hover {
+    background-color: transparent !important;
+    border: 2px solid #FA5959;
+    color: #FA5959; }
+
 /* Section Features */
-.features .nav-item .link-info.active {
+.section-features .nav-item .link-info.active {
   color: black !important;
   border-bottom: 3px solid #FA5959 !important; }
 
+.section-features .nav-item .link-info:hover {
+  color: #FA5959 !important; }
+
 /* Section Cards */
-.card .card-footer {
+.section-cards .card .card-footer {
   background-image: url(../images/bg-dots.svg);
   background-repeat: repeat-x; }
 
 /* Section Accorddion */
-.accordion-button::after {
+.section-accordion .accordion-button::after {
   background-image: url(../images/icon-arrow.svg); }
 
-.accordion-button:not(.collapsed)::after {
+.section-accordion .accordion-button:not(.collapsed)::after {
   background-image: url(../images/icon-arrow-red.svg); }
 
-.accordion-button:hover {
+.section-accordion .accordion-button:hover {
   color: #FA5959; }
 
 /* Footer */
-.was-validated .form-control:invalid {
+footer .was-validated .form-control:invalid {
   border: 2px solid #FA5959;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   background-image: url(../images/icon-error.svg); }
 
-.form-control::placeholder {
+footer .form-control::placeholder {
   color: #adb5bd; }
+
+footer a.text-light:hover {
+  color: #FA5959 !important; }
+
+footer .net-link:hover path {
+  fill: #FA5959;
+  transition: all .1s ease-in; }
+
+footer .btn.btn-secondary:hover {
+  background-color: white !important;
+  color: #FA5959 !important; }
 
 /* Breakpoint lg */
 @media (min-width: 992px) {
   .container.mt-5 {
     margin-top: 200px !important; }
   /* Header */
-  .offcanvas {
+  header .offcanvas {
     visibility: visible;
     position: relative; }
-  .navbar-nav .nav-item a {
+  header .navbar-nav .nav-item a {
     font-size: 1rem !important; }
-  .navbar-nav .nav-item .btn {
+  header .navbar-nav .nav-item .btn {
     font-size: 1rem !important;
     background-color: #FA5959;
     width: 100% !important; }
-  .navbar-nav .nav-item.border-top {
+  header .navbar-nav .nav-item.border-top {
     border: none !important; }
-  .navbar-nav .nav-item.w-100 {
+  header .navbar-nav .nav-item.w-100 {
     width: auto !important; }
   /* Section Features */
-  .features .nav-item {
+  .section-features .nav-item {
     border-top: none !important; } }
 
 /* Breakpoint mobil */
@@ -8445,11 +8484,13 @@ body {
   .container.mt-5 {
     margin-top: 100px !important; }
   /* Header */
-  .offcanvas {
+  header .offcanvas {
     width: 100% !important; }
-  .offcanvas-start-lg {
+  header .offcanvas-start-lg {
     top: 0;
     left: 0;
     transform: translateX(-100%); }
-  .navbar-nav .nav-item a {
-    color: white !important; } }
+  header .navbar-nav .nav-item a {
+    color: white; }
+  header .navbar-nav .nav-item .btn {
+    border: 2px solid; } }
